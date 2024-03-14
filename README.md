@@ -1,9 +1,13 @@
-# Desarrolla tu primera API REST desde cero con Spring Boot aplicando buenas practicas
+# API REST con Spring Boot
 
-## Este proyecto tiene la configuración y desarrollo necesario para que comiences a crear tu primera API REST desde cero con Spring Boot aplicando buenas practicas para potenciar tus proyectos.
+### Local
 
-## Script de la base de datos
+1. Levantar la BD MySQL con Docker
+```bash
+docker-compose up -d
+```
 
+2. Crear la BD
 ```bash
 CREATE TABLE `db_springboot_dev`.`clients` (
   `id` INT ZEROFILL NOT NULL AUTO_INCREMENT,
@@ -17,3 +21,12 @@ INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Carlos', 'M
 INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Marcela', 'Sanchez', 'schMarce@itb.com', '2023-08-03');
 INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Ben', 'Tennyson', 'ben10@cn.com', '2023-08-04');
 ```
+
+3. Levantar con Maven
+```bash
+mvn clean install
+
+mvn spring-boot:run
+```
+
+
