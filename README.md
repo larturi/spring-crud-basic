@@ -20,6 +20,9 @@ INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Joel', 'Jur
 INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Carlos', 'Miranda', 'mirandaTr98@gmail.com', '2023-08-02');
 INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Marcela', 'Sanchez', 'schMarce@itb.com', '2023-08-03');
 INSERT INTO clients (firstname, lastname, email, created_at) VALUES('Ben', 'Tennyson', 'ben10@cn.com', '2023-08-04');
+
+ALTER TABLE clients 
+CHANGE COLUMN created_at created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ```
 
 3. Levantar con Maven
